@@ -3,6 +3,13 @@
 """
 fake_img.py - pass parameters and generate a fake x-ray diffraction 
               image from them 
+	      
+该代码是一个Python脚本，用于生成伪造的X射线衍射图像，然后使用生成的图像与真实图像进行概率图像匹配。
+该脚本定义了几个函数来生成图像的不同部分，例如背景、峰值和遮罩。该函数将这些部分组合在一起以生成假图像。该函数获取生成的假图像和真实图像，并返回两个图像之间的绝对差异之和。fake_imgimg_diff
+该脚本还定义了一个函数，该函数采用一组参数并使用该函数生成假图像。然后，它使用生成的假图像和真实图像使用该函数计算参数的对数似然。lnprobfake_imgpixel_difference_log_prob
+最后，该脚本定义了一个函数，该函数使用包为概率图像匹配设置示例运行。它使用该函数生成一个假图像，然后使用生成的图像和真实图像来使用函数和包估计参数。mainemceefake_imglnprobemcee
+
+总体而言，该脚本注释良好，并使用描述性函数名称，这使得易于理解每个函数的用途。
 
 Created by Dave Williams on 2015-01-21
 """
